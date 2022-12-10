@@ -1,7 +1,3 @@
-/*
-	先建立tcp連線	透過第四層不管port
-	不斷send請求
-*/
 package main
 
 import (
