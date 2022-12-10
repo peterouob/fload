@@ -18,7 +18,7 @@ func main() {
 	defer listen.Close()
 	for {
 		var data [1024]byte
-		n, addr, err := listen.ReadFromUDP(data[:]) // 接收数据
+		n, addr, err := listen.ReadFromUDP(data[:])
 		if err != nil {
 			fmt.Println("read udp failed, err: ", err)
 			continue
